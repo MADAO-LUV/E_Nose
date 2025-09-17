@@ -1,0 +1,16 @@
+e_nose\tasks.o: ../Middlewares/Third_Party/FreeRTOS/Source/tasks.c
+e_nose\tasks.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdlib.h
+e_nose\tasks.o: D:\keil5\ARM\ARMCC\Bin\..\include\string.h
+e_nose\tasks.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
+e_nose\tasks.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h
+e_nose\tasks.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
+e_nose\tasks.o: ../Core/Inc/FreeRTOSConfig.h
+e_nose\tasks.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
+e_nose\tasks.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
+e_nose\tasks.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+e_nose\tasks.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/portmacro.h
+e_nose\tasks.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
+e_nose\tasks.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
+e_nose\tasks.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
+e_nose\tasks.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h
+e_nose\tasks.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/stack_macros.h
