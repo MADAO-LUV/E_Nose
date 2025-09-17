@@ -4,6 +4,7 @@
 "e_nose\gpio.o"
 "e_nose\freertos.o"
 "e_nose\adc.o"
+"e_nose\dma.o"
 "e_nose\usart.o"
 "e_nose\stm32f1xx_it.o"
 "e_nose\stm32f1xx_hal_msp.o"

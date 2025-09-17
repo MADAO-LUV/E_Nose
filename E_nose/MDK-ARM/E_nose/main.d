@@ -45,5 +45,6 @@ e_nose\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
 e_nose\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
 e_nose\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h
 e_nose\main.o: ../Core/Inc/adc.h
+e_nose\main.o: ../Core/Inc/dma.h
 e_nose\main.o: ../Core/Inc/usart.h
 e_nose\main.o: ../Core/Inc/gpio.h
