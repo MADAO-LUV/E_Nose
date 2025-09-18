@@ -25,7 +25,8 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "CoreData.h"
+#include "headfile.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -98,6 +99,11 @@ void MX_FREERTOS_Init(void) {
 
   /* USER CODE BEGIN RTOS_QUEUES */
   /* add queues, ... */
+
+	// 初始化消息队列
+  xSensorQueue = xQueueCreate(5,sizeof(SensorData_t));
+  xCmdQueue    = xQueueCreate(5,sizeof(CmdMsg_t));
+	
   /* USER CODE END RTOS_QUEUES */
 
   /* Create the thread(s) */
@@ -105,8 +111,14 @@ void MX_FREERTOS_Init(void) {
   osThreadDef(defaultTask, StartDefaultTask, osPriorityNormal, 0, 128);
   defaultTaskHandle = osThreadCreate(osThread(defaultTask), NULL);
 
+
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
+    xTaskCreate(SensorTask, "Sensor", 256, NULL, 2, NULL);
+    xTaskCreate(UartScreenTask, "Screen", 512, NULL, 2, NULL);
+    //xTaskCreate(WiFiTask, "WiFi", 512, NULL, 2, NULL);
+	
+	
   /* USER CODE END RTOS_THREADS */
 
 }

@@ -7,6 +7,10 @@
 #include "stdio.h"
 #include "string.h"
 #include "stdint.h"
+#include "math.h"
+#include "FreeRTOS.h"
+#include "task.h"
+#include "cmsis_os.h"
 
 // 这里是存放需要用到的外设库
 #include "wifi.h"
